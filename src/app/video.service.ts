@@ -14,6 +14,7 @@ const headers = new HttpHeaders({
 export class VideoService {
   private url = 'https://valuefy-assignment-x.herokuapp.com/api/getVideos';
   videos = [];
+  selectedVideo:any = {};
   constructor(private http: HttpClient) {}
   getVideos(): Observable<any> {
     return this.http.get<any>(this.url, { headers }).pipe(
@@ -22,6 +23,9 @@ export class VideoService {
     );
   }
 
+  getSelectedVideo() {
+    return this.selectedVideo;
+  }
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       // TODO: send the error to remote logging infrastructure

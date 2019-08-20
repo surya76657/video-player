@@ -7,8 +7,12 @@
 .video-container-wrapper{
   padding: 1rem;
 }
+.video-container-wrapper{
+  text-align: center;
+}
 .video-container{
   width:100%;
+  max-width: 500px;
 }
 .video{
   text-align: center;
