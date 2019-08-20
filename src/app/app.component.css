@@ -1,13 +1,14 @@
 .grid-pad {
-  display: grid;
+  display: flex;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 .grid-element {
   flex: 1;
+  padding: 10px;
 }
 .video-poster {
-  width: 100%;
+  /* width: 100%; */
 }
 .video-layout {
   display: grid;
