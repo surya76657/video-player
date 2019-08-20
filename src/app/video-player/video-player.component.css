@@ -1,0 +1,15 @@
+.video-layout {
+  display: grid;
+  grid-gap: 15px;
+  background-color: #f0f0f0;
+}
+.poster-container-wrapper,
+.video-container-wrapper{
+  padding: 1rem;
+}
+.video-container{
+  width:100%;
+}
+.video{
+  text-align: center;
+}
