@@ -1,0 +1,23 @@
+.grid-pad {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.grid-element {
+  flex: 1;
+}
+.video-poster {
+  width: 100%;
+}
+.video-layout {
+  display: grid;
+  grid-gap: 15px;
+  background-color: #f0f0f0;
+}
+.poster-container-wrapper,
+.video-container-wrapper{
+  padding: 1rem;
+}
+.video-container{
+  width:100%;
+}
