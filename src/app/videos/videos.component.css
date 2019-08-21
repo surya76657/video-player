@@ -12,8 +12,10 @@
 .grid-pad {
   display: flex;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 .grid-element {
   flex: 1;
   padding: 10px;

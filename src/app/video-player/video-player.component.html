@@ -1,4 +1,4 @@
 <div class="video-container-wrapper">
-  <div>{{videoService.getSelectedVideo().name}}</div>
-  <video [src]="videoService.getSelectedVideo().trailer" controls class="video-container"></video>
+  <!-- <div>{{ getName() || '' }}</div> -->
+  <iframe [src]="transform()"></iframe>
 </div>

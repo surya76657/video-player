@@ -18,7 +18,7 @@ export class VideosComponent implements OnInit {
       this.videoService.selectedVideo = video[0];
     });
   }
-  
+
   selectVideo(video) {
     this.videoService.selectedVideo = video;
   }
