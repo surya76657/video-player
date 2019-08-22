@@ -1,4 +1,6 @@
 <div class="video-container-wrapper">
   <!-- <div>{{ getName() || '' }}</div> -->
-  <iframe [src]="transform()"></iframe>
+  <div *ngIf="this.videoService.getSelectedVideo().trailer != null" class="video-container">
+    <iframe [src]="this.videoService.getSelectedVideo().trailer | safe" class="video-container"></iframe>
+  </div>
 </div>

@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { VideosComponent } from './videos/videos.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
-  declarations: [AppComponent, VideosComponent, VideoPlayerComponent],
+  declarations: [AppComponent, VideosComponent, VideoPlayerComponent, SafePipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     // {

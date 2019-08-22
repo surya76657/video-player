@@ -3,9 +3,10 @@
   grid-gap: 15px;
   background-color: #f0f0f0;
 }
-.poster-container-wrapper,
 .video-container-wrapper{
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 .video-container-wrapper{
   text-align: center;
@@ -13,6 +14,7 @@
 .video-container{
   width:100%;
   max-width: 500px;
+  height: 300px;
 }
 .video{
   text-align: center;
