@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path')
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/video-player'));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
