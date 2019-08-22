@@ -1,5 +1,8 @@
 # VideoPlayer
 
+The Link Of this Project is [Video PLayer](https://angular-video-player.herokuapp.com/)
+this is deployed at [heroku](https://www.heroku.com/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server
