@@ -1,19 +1,18 @@
-
 .poster-container-wrapper,
-.video-container-wrapper{
+.video-container-wrapper {
   padding: 1rem;
 }
-.video-container{
-  width:100%;
+.video-container {
+  width: 100%;
 }
-.video{
+.video {
   text-align: center;
 }
 .grid-pad {
   display: flex;
-  grid-gap: 20px;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 20px; */
+  overflow: auto;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
 
 .grid-element {
