@@ -10,9 +10,9 @@ button {
   outline: unset;
   padding: unset;
 }
-.ng2-carouselamos-wrapper {
+/* .ng2-carouselamos-wrapper {
   width: 100% !important;
-}
+} */
 .templete-button{
   display: none;
 }
