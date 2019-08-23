@@ -5,17 +5,33 @@
 .video-container {
   width: 100%;
 }
-.video {
-  text-align: center;
-}
 .grid-pad {
   display: flex;
-  /* grid-gap: 20px; */
   overflow: auto;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
-
+.selectedVideo {
+  font-family: cursive;
+  text-align: center;
+  padding: 1rem;
+  color: #899abe;
+  font-weight: 700;
+}
 .grid-element {
   flex: 1;
   padding: 10px;
+}
+.video {
+  padding: 0 8px;
+}
+
+.template-button {
+  display: flex;
+  height: 250px;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  font-size: 50px;
+}
+.template-button:hover {
+  background-color: #ffffff67;
 }

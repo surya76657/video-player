@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-  background-color: #294d8a
+body {
+  background-color: #294d8a;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+button {
+  outline: unset;
+  padding: unset;
+}
+.ng2-carouselamos-wrapper {
+  width: 100% !important;
+}
+.templete-button{
+  display: none;
+}
+.templete-button:hover{
+  display: flex;
 }

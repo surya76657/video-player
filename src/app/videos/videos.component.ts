@@ -8,7 +8,7 @@ import { VideoService } from '../video.service';
 })
 export class VideosComponent implements OnInit {
   videos = [];
-  constructor(private videoService: VideoService) {}
+  constructor(public videoService: VideoService) {}
   ngOnInit() {
     this.getVideos();
   }
@@ -17,6 +17,9 @@ export class VideosComponent implements OnInit {
       this.videos = video;
       this.videoService.selectedVideo = video[0];
     });
+  }
+  getSelectedVideoIndex() {
+    return this.videos.indexOf(d => d.name === this.videoService.selectedVideo.name) || 0;
   }
 
   selectVideo(video) {
