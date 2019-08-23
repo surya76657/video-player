@@ -1,3 +1,11 @@
+.app-header{
+  font-family: cursive;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 36px;
+  padding: 16px;
+}
+
 .video-layout {
   /* display: grid;
   grid-gap: 15px; */
