@@ -8,6 +8,8 @@ import { VideoService } from '../video.service';
 })
 export class VideosComponent implements OnInit {
   videos = [];
+  selectedItem;
+  selectedIndex;
   constructor(public videoService: VideoService) {}
   ngOnInit() {
     this.getVideos();
@@ -18,11 +20,11 @@ export class VideosComponent implements OnInit {
       this.videoService.selectedVideo = video[0];
     });
   }
+  public selectVideo(video) {
+    console.log({ video });
+    this.videoService.selectedVideo = video;
+  }
   getSelectedVideoIndex() {
     return this.videos.indexOf(d => d.name === this.videoService.selectedVideo.name) || 0;
-  }
-
-  selectVideo(video) {
-    this.videoService.selectedVideo = video;
   }
 }
