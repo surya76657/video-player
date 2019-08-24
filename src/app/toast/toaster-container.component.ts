@@ -29,9 +29,5 @@ export class ToasterContainerComponent implements OnInit {
 
   remove(index: number) {
     this.toasts = this.toasts.filter((v, i) => i !== index);
-    // this.toasts.splice(index, 1);
   }
 }
-
-// <pre>toast$: {{ this.toaster.toast$ | async | json }}</pre>
-// <pre>toasts: {{ toasts | json }}</pre>/////////////

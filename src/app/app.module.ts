@@ -10,6 +10,7 @@ import { SafePipe } from './safe.pipe';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { ToastComponent } from './toast/toast.component';
 import { ToasterContainerComponent } from './toast/toaster-container.component';
+import { VideoInterceptor } from './interceptors/Video.interceptor';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,7 @@ import { ToasterContainerComponent } from './toast/toaster-container.component';
     ToasterContainerComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, Ng2CarouselamosModule],
-  providers: [
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: TokenInterceptor,
-    //   multi: true
-    // }
-  ],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: VideoInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

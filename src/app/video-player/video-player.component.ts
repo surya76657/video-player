@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ɵConsole } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { VideoService } from '../video.service';
 
 @Component({
