@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 import { ToasterService } from './toaster.service';
 
-const headers = new HttpHeaders({
-  'Content-Type': 'application/json; charset=utf-8',
-  source: 'web'
-});
 @Injectable({
   providedIn: 'root'
 })
