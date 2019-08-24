@@ -30,7 +30,7 @@
 <div class="poster-container-wrapper">
   <div class="grid grid-pad">
     <div *ngFor="let video of videos" class="grid-element">
-      <div (click)="selectVideo(video)">
+      <div (click)="selectVideo($event,video)">
         <div class="module video">
           <img src="{{ video.poster }}" class="video-poster" height="250" />
         </div>
