@@ -1,5 +1,5 @@
 <div class="video-container-wrapper">
-  <div *ngIf="this.videoService.getSelectedVideo().trailer != null" class="video-container">
+  <div *ngIf="this.videoService.getSelectedVideo()?.trailer != null" class="video-container">
     <iframe [src]="this.videoService.getSelectedVideo().trailer | safe" class="video-container"></iframe>
   </div>
 </div>

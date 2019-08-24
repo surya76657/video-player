@@ -1,5 +1,5 @@
 <div class="selectedVideo">
-  {{ videoService.selectedVideo.name | uppercase }}
+  {{ videoService.selectedVideo?.name | uppercase }}
 </div>
 <div
   ng2-carouselamos
@@ -8,6 +8,7 @@
   [$item]="itemTemplate"
   [$prev]="prevTemplate"
   [$next]="nextTemplate"
+  (onSelectedItem)="selectVideo($event.item)"
 ></div>
 
 <ng-template #prevTemplate class="button-container">
@@ -23,7 +24,7 @@
 </ng-template>
 
 <ng-template let-video let-i="index" #itemTemplate>
-  <div (click)="selectVideo($event,video);" class="module video">
+  <div (click)="selectVideo(video);" class="module video">
     <img src="{{ video.poster }}" class="video-poster" height="250" />
   </div>
 </ng-template>

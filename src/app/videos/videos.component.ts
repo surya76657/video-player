@@ -20,10 +20,8 @@ export class VideosComponent implements OnInit {
       this.videoService.selectedVideo = video[0];
     });
   }
-  selectVideo = (e, video) => {
-    e.preventDefault();
-    e.stopPropagation();
-    console.log({ video, e });
+  selectVideo = video => {
+    console.log(video);
     this.videoService.selectedVideo = video;
   }
   getSelectedVideoIndex() {
