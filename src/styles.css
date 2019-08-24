@@ -11,10 +11,12 @@ button {
   padding: unset;
 }
 .ng2-carouselamos-wrapper {
-  width: 100% !important;
+  /* width: 100% !important; */
+  z-index: 2;
 }
 .templete-button{
   display: none;
+  z-index:3;
 }
 .templete-button:hover{
   display: flex;
