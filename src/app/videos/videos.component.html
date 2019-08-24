@@ -23,7 +23,7 @@
 </ng-template>
 
 <ng-template let-video let-i="index" #itemTemplate>
-  <div (click)="selectVideo(video); $event.stopPropagation()" class="module video">
+  <div (click)="selectVideo($event,video);" class="module video">
     <img src="{{ video.poster }}" class="video-poster" height="250" />
   </div>
 </ng-template>
