@@ -8,9 +8,18 @@ import { VideosComponent } from './videos/videos.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { SafePipe } from './safe.pipe';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { ToastComponent } from './toast/toast.component';
+import { ToasterContainerComponent } from './toast/toaster-container.component';
 
 @NgModule({
-  declarations: [AppComponent, VideosComponent, VideoPlayerComponent, SafePipe],
+  declarations: [
+    AppComponent,
+    VideosComponent,
+    VideoPlayerComponent,
+    SafePipe,
+    ToastComponent,
+    ToasterContainerComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, Ng2CarouselamosModule],
   providers: [
     // {

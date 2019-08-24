@@ -5,7 +5,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 const headers = new HttpHeaders({
   'Content-Type': 'application/json; charset=utf-8',
-  source: '127.0.0.1'
+  source: 'web'
 });
 
 @Injectable({
@@ -29,7 +29,7 @@ export class VideoService {
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
+      console.error(error); // log to console i nstead
 
       // Let the app keep running by returning an empty result.
       return of(result as T);
